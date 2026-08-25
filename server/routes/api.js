@@ -1,6 +1,6 @@
 import api from '../controllers/todolist.js'
-import koaRouter from 'koa-router'
-const router = koaRouter()
+import express from 'express'
+const router = express.Router()
 
 router.get('/todolist/:id', api.getTodolist)
 router.post('/todolist', api.createTodolist)
